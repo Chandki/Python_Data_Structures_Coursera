@@ -13,7 +13,7 @@ try:
                     counts[sender] = counts.get(sender, 0) + 1
 except:
     print("File cannot be opened or read:", fname)
-    sys.exit()
+    quit()  
 
 if counts:
     max_sender = None
