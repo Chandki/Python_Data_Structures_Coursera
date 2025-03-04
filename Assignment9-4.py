@@ -4,7 +4,7 @@ fname = input("Enter file name: ")
 
 try:
     with open(fname) as fh:
-        counts = {}
+        counts = dict()
         for line in fh:
             if line.startswith('From '):
                 words = line.split()
